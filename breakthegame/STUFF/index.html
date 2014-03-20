@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='UTF-8'>
+	
+	<title>(Better) Round Out Tabs</title>
+	
+	<link rel='stylesheet' href='css/style.css'>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script>
+		$(function() {
+			$("li").click(function(e) {
+			  e.preventDefault();
+			  $("li").removeClass("selected");
+			  $(this).addClass("selected");
+			});
+		});
+	</script>
+</head>
+
+<body>
+
+	<ul class="tabrow">
+	    <li class="selected">Login</li>
+		<li>Register</li>
+	</ul>
+	
+</body>
+
+</html>
